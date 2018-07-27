@@ -4,8 +4,8 @@ Nbgrader is a tool that allows creating, distributing and grading assignments in
 ### Installation
 To install updated version of nbgrader("Collect All" added):
 
-```!pip install --user  git+git://github.com/cybera/nbgrader.git@cybera-changes
-```
+`!pip install --user  git+git://github.com/cybera/nbgrader.git@cybera-changes
+`
 
 ### How to use it
 Documentation and introductory video:
