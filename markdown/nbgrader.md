@@ -3,8 +3,13 @@
 Nbgrader is a tool that allows creating, distributing and grading assignments in the Jupyter notebook.
 
 
+<<<<<<< HEAD
 ### Documentation
 We use latest version 0.5.4
+=======
+`!pip install --user  git+git://github.com/cybera/nbgrader.git@cybera-changes
+`
+>>>>>>> 166b45faf2aa7753d05cb5f020695eb8c3cef894
 
 Official documentation and introductory video:
 
