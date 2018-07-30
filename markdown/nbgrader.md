@@ -4,8 +4,7 @@ Nbgrader is a tool that allows creating, distributing and grading assignments in
 
 
 ### Documentation
-We use latest version 0.5.4
-
+We use latest version 0.5.4.
 Official documentation and introductory video:
 
 http://nbgrader.readthedocs.io/en/stable/
@@ -125,8 +124,10 @@ For autograded/manually graded answer - the code is hidden, there is a prompt to
 If an assignment looks good - it can be released to shared location  - so students can fetch it. Press Release button to do it:
 ![](images/release.png)
 
-Once released - success widow will pop up.
-![](images/release_success.png)
+Once released - success widow will pop up:
+
+<img src="images/release_success.png" alt="drawing" width="500px"/>
+
 
 ### Fetch/complete and submit an assignment(students)
 
@@ -148,15 +149,16 @@ Complete the assignment and save it. Before submitting it back  - you can click 
 ![](images/validate.png)
 
 In case of error - error window will pop up:
-![](images/validate_error.png)
+
+<img src="images/validate_error.png" alt="drawing" width="500px"/>
 
 In case of success - success window:
-![](images/validate_success.png)
+
+<img src="images/validate_success.png" alt="drawing" width="500px"/>
 
 Note, by default it will allow to submit notebooks even if the don't pass validation.(can be customized)
 
-
-Once you are ready to submit an assignment  - click Submit button:
+Once you are ready to submit an assignment  - click Submit button
 
 ![](images/submit.png)
 
