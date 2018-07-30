@@ -3,13 +3,8 @@
 Nbgrader is a tool that allows creating, distributing and grading assignments in the Jupyter notebook.
 
 
-<<<<<<< HEAD
 ### Documentation
 We use latest version 0.5.4
-=======
-`!pip install --user  git+git://github.com/cybera/nbgrader.git@cybera-changes
-`
->>>>>>> 166b45faf2aa7753d05cb5f020695eb8c3cef894
 
 Official documentation and introductory video:
 
@@ -60,19 +55,22 @@ c.Exchange.root = "/tmp/sharedvolume" `
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html
 
 After the server is restarted you will see Formgrader and Assignments in the menu:
-![](images/nbgrader.png)
+
+<img src="images/nbgrader.png" alt="drawing" width="500px"/>
 
 To create new assignment - click on Formgrader:
 If you click on the Instructions - you will see some basic instructions:
 ![](images/instructions.png)
 
 Click on Add New Assignment, enter assignment name and optional due date. (For time zone only UTC is supported). If assignment is submitted past due date - it gives student a warning.(can be customized):
-![](images/add_assignment.png)
+
+<img src="images/add_assignment.png" alt="drawing" width="500px"/>
 
 After the entry for assignment is created  - click on the assignment name and you can add new notebook containing assignment.
 
 Inside the notebook click on the View->Cell Toolbar -> Create Assignment:
-![](images/create_assignment.png)
+
+<img src="images/create_assignment.png" alt="drawing" width="500px"/>
 
 After that every cell will have a little header where you can specify the cell type:
 
@@ -169,19 +167,25 @@ Click Collect to get student's submission from shared location:
 ![](images/collect.png)
 
 If there is new submission on shared location  - message pops up that new submission is collected/updated.
-![](images/collected_submissions.png)
+
+<img src="images/collected_submissions.png" alt="drawing" width="500px"/>
 
 If there are no new submissions:
-![](images/no_new_submissions.png)
+
+<img src="images/no_new_submissions.png" alt="drawing" width="500px"/>
+
 
 Once new submissions are  collected - click on the number of submissions to start grading:
-![](images/number_of_submissions.png)
+
+<img src="images/number_of_submissions.png" alt="drawing" width="300px"/>
 
 New submissions automatically go to the state "needs autograding". Click on autograde button.
 ![](images/needs_autograding.png)
 
 Message if autograding is successful:
-![](images/after_autograding.png)
+
+<img src="images/after_autograding.png" alt="drawing" width="500px"/>
+
 
 If there are cells that need manual grading in the assignment  -  submission will go into "needs manual grading state":
 ![](images/needs_manual_grading.png)
@@ -194,7 +198,7 @@ For manually graded cells you can click on "Full credit/No credit" button to ass
 
 After you are done manual grading - click on the next button in the top right corner:
 
-![](images/next.png)
+<img src="images/next.png" alt="drawing" width="200px"/>
 
 You will see that submission was graded.
 ![](images/graded.png)
@@ -203,7 +207,7 @@ You will see that submission was graded.
 
 Student list (StudentId, last Name, first name, email) can be created in advance using Manage Students tab:
 
-![](images/manage_students.png)
+<img src="images/manage_students.png" alt="drawing" width="300px"/>
 
 If there is a submission from student who is not in the list  - his last name/fist name will be set to None/None by default, can be updated through Manage students tab:
 
@@ -213,7 +217,8 @@ Click on Edit Student button:
 ![](images/edit_student.png)
 
 A window pops up where all the student information can be filled in:
-![](images/student_information.png)
+
+<img src="images/student_information.png" alt="drawing" width="500px"/>
 
 Click Save and student information will be updated in the list:
 
@@ -228,14 +233,15 @@ When an instructor collects assignments - only the latest submission is copied t
 "Collect All"  allows to copy all the assignments submitted in the past to the instructor's home directory.
 If there are some submissions to copy - the list of submissions will be displayed:
 
-![](images/collect_all_copied.png)
+<img src="images/collect_all_copied.png" alt="drawing" width="500px"/>
 
 If all existing submissions are copied already  - message will be displayed:
 
-![](images/collect_all_nothing.png)
+<img src="images/collect_all_nothing.png" alt="drawing" width="500px"/>
 
 The assignments are copied to ~/<Course_name>/submitted_history/<assignment>/<studentID_timestamp> directory on the instructor's container:
 
-![](images/collect_all_list.png)
+<img src="images/collect_all_list.png" alt="drawing" width="500px"/>
+
 
 Timestamp is UTC time(can be customized).
