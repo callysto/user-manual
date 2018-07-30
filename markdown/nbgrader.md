@@ -11,7 +11,8 @@ http://nbgrader.readthedocs.io/en/stable/
 
 ### Example usage
 
-#### Installation (instructors and students)
+#### Installation (instructors and students) 
+Note: these steps are just for reference  - nbgrader will be wil be installed in advance.
 
 1. To install updated version of nbgrader("Collect All" added):
 
@@ -49,7 +50,7 @@ c.Exchange.root = "/tmp/sharedvolume" `
 
 5. Restart server.
 
-#### Create an assignment(instructors):
+#### Create an assignment(instructors)
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html
 
