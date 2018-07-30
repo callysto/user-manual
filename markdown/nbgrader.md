@@ -4,8 +4,12 @@ Nbgrader is a tool that allows creating, distributing and grading assignments in
 
 
 ### Documentation
+<<<<<<< HEAD
 We use latest version 0.5.4
 
+=======
+We use latest version 0.5.4.
+>>>>>>> 731377b86ee29379929babf1cdf9238083ab0bf8
 Official documentation and introductory video:
 
 http://nbgrader.readthedocs.io/en/stable/
