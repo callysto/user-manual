@@ -14,7 +14,7 @@ Instructors can create  assignments, copy them to shared location, collect and g
 Students can fetch assignments from the shared location, complete and submit them back.
 
 
-#### Create an assignment(instructors)
+### Create an assignment(instructors)
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html
 
@@ -44,7 +44,7 @@ For manually graded answer cells you can optionally specify the number of points
 
 For more information about cell types - see **Grading and cell types** section.
 
-#### Generate student version/preview and release an assignment(instructors):
+### Generate student version/preview and release an assignment(instructors):
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html#assign-and-release-an-assignment
 
@@ -91,7 +91,7 @@ Once you are ready to submit an assignment  - click Submit button.
 
 An assignment can be submitted multiple times.
 
-#### Collect/autograde and manually grade assignments (instructors):
+### Collect/autograde and manually grade assignments (instructors):
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html#releasing-files-to-students-and-collecting-submissions
 
@@ -189,7 +189,7 @@ Timestamp is UTC time(can be customized).
 
 **Modify released assignment** - this section is about modifying an assignment that was already released and fetched by students.
 
-#### Installation (instructors and students):
+### Installation (instructors and students):
 
 1. To install updated version of nbgrader("Collect All" added):
 
@@ -229,7 +229,7 @@ To install original version:
 
 5. Restart server.
 
-#### Grading and cell types (instructors):
+### Grading and cell types (instructors):
 
 Inside the notebook click on the View->Cell Toolbar -> Create Assignment:
 
@@ -273,7 +273,7 @@ http://nbgrader.readthedocs.io/en/stable/user_guide/source/ps1/problem1.html
 http://nbgrader.readthedocs.io/en/stable/user_guide/source/ps1/problem2.html
 
 
-#### Validate notebook (students):
+### Validate notebook (students):
 
 Before submitting completed assignment back  - you can click Validate button to check if all the autograded tests  pass and code is there for manually graded cells:
 ![](images/validate.png)
@@ -288,7 +288,7 @@ In case of success - success window:
 
 Note, by default it will allow to submit notebooks even if the don't pass validation.(can be customized)
 
-#### Modify released assignment(instructors and students):
+### Modify released assignment(instructors and students):
 
 If the assignment was already released but need to be modified - press cross button (Unrelease)
 
