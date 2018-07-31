@@ -109,7 +109,7 @@ If there are no new submissions:
 
 Once new submissions are  collected - click on the number of submissions to start grading:
 
-<img src="images/number_of_submissions.png" alt="drawing" width="300px"/>
+<img src="images/number_of_submissions.png" alt="drawing" width="400px"/>
 
 New submissions automatically go to the state "needs autograding". Click on autograde button.
 ![](images/needs_autograding.png)
@@ -244,12 +244,10 @@ For **code** cells you can choose between:
 - Autograded answer
 - Autograded tests
 - Read-only
-- none
 
 For **markdown** cells  the choices are:
 - Manually graded answer
 - Read-only
-- none
 
 **Read-only** cells  - students will not be able to edit these cells:
 ![](images/read_only.png)
