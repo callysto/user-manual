@@ -10,7 +10,7 @@ http://nbgrader.readthedocs.io/en/stable/
 
 ### Example usage
 
-Instructors can create  assignments, copy them to shared location, collect and grade submitted assignments, manage students list.
+Instructors can create  assignments, copy them to shared location, collect and grade submitted assignments, manage students list.  
 Students can fetch assignments from the shared location, complete and submit them back.
 
 
