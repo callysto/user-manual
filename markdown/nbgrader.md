@@ -9,50 +9,10 @@ Official documentation and introductory video:
 http://nbgrader.readthedocs.io/en/stable/
 
 ### Example usage
-<<<<<<< Updated upstream
 
-#### Installation (instructors and students) 
-Note: these steps are just for reference  - nbgrader will be wil be installed in advance.
-
-1. To install updated version of nbgrader("Collect All" added):
-
-`!pip install --user  git+git://github.com/cybera/nbgrader.git@cybera-changes
-`
-
-To install original version:
-
-`!pip install --user nbgrader`
-
-2.  Enable extension:
-
-`!jupyter nbextension install --user --py nbgrader --overwrite
-!jupyter nbextension enable --user --py nbgrader
-!jupyter serverextension enable --user --py nbgrader
-`
-
-3. Create directory for course that you will be managing(for instructors):
- `!makedir Course3`
-
-4. Create config file for nbgrader ~/.jupyter/nbgrader_config.py in your home directory:
-
- - For **instructors** we need to specify the shared location to distribute/collect assignments and course name (in this example shared location is /tmp/sharedvolume, instructors home directory is /home/teacher5/  and course name is Course3):
-
-`c = get_config()
-c.Exchange.course_id = "Course3"  
-c.CourseDirectory.root = '/home/teacher5/Course3'  
-c.Exchange.root = "/tmp/sharedvolume"`   
-
-- for **students**  we need to specify shared location:
-
-`c = get_config()
-c.Exchange.path_includes_course = True
-c.Exchange.root = "/tmp/sharedvolume" `
-
-5. Restart server.
-=======
 Instructors can create  assignments, copy them to shared location, collect and grade submitted assignments, manage students list.
 Students can fetch assignments from the shared location, complete and submit them back.
->>>>>>> Stashed changes
+
 
 #### Create an assignment(instructors)
 
