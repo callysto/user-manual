@@ -9,52 +9,12 @@ Official documentation and introductory video:
 http://nbgrader.readthedocs.io/en/stable/
 
 ### Example usage
-<<<<<<< Updated upstream
 
-#### Installation (instructors and students) 
-Note: these steps are just for reference  - nbgrader will be wil be installed in advance.
-
-1. To install updated version of nbgrader("Collect All" added):
-
-`!pip install --user  git+git://github.com/cybera/nbgrader.git@cybera-changes
-`
-
-To install original version:
-
-`!pip install --user nbgrader`
-
-2.  Enable extension:
-
-`!jupyter nbextension install --user --py nbgrader --overwrite
-!jupyter nbextension enable --user --py nbgrader
-!jupyter serverextension enable --user --py nbgrader
-`
-
-3. Create directory for course that you will be managing(for instructors):
- `!makedir Course3`
-
-4. Create config file for nbgrader ~/.jupyter/nbgrader_config.py in your home directory:
-
- - For **instructors** we need to specify the shared location to distribute/collect assignments and course name (in this example shared location is /tmp/sharedvolume, instructors home directory is /home/teacher5/  and course name is Course3):
-
-`c = get_config()
-c.Exchange.course_id = "Course3"  
-c.CourseDirectory.root = '/home/teacher5/Course3'  
-c.Exchange.root = "/tmp/sharedvolume"`   
-
-- for **students**  we need to specify shared location:
-
-`c = get_config()
-c.Exchange.path_includes_course = True
-c.Exchange.root = "/tmp/sharedvolume" `
-
-5. Restart server.
-=======
-Instructors can create  assignments, copy them to shared location, collect and grade submitted assignments, manage students list.
+Instructors can create  assignments, copy them to shared location, collect and grade submitted assignments, manage students list.  
 Students can fetch assignments from the shared location, complete and submit them back.
->>>>>>> Stashed changes
 
-#### Create an assignment(instructors)
+
+### Create an assignment(instructors)
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html
 
@@ -84,7 +44,7 @@ For manually graded answer cells you can optionally specify the number of points
 
 For more information about cell types - see **Grading and cell types** section.
 
-#### Generate student version/preview and release an assignment(instructors):
+### Generate student version/preview and release an assignment(instructors):
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html#assign-and-release-an-assignment
 
@@ -131,7 +91,7 @@ Once you are ready to submit an assignment  - click Submit button.
 
 An assignment can be submitted multiple times.
 
-#### Collect/autograde and manually grade assignments (instructors):
+### Collect/autograde and manually grade assignments (instructors):
 
 Official docs: http://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html#releasing-files-to-students-and-collecting-submissions
 
@@ -149,7 +109,7 @@ If there are no new submissions:
 
 Once new submissions are  collected - click on the number of submissions to start grading:
 
-<img src="images/number_of_submissions.png" alt="drawing" width="300px"/>
+<img src="images/number_of_submissions.png" alt="drawing" width="400px"/>
 
 New submissions automatically go to the state "needs autograding". Click on autograde button.
 ![](images/needs_autograding.png)
@@ -229,7 +189,7 @@ Timestamp is UTC time(can be customized).
 
 **Modify released assignment** - this section is about modifying an assignment that was already released and fetched by students.
 
-#### Installation (instructors and students):
+### Installation (instructors and students):
 
 1. To install updated version of nbgrader("Collect All" added):
 
@@ -269,7 +229,7 @@ To install original version:
 
 5. Restart server.
 
-#### Grading and cell types (instructors):
+### Grading and cell types (instructors):
 
 Inside the notebook click on the View->Cell Toolbar -> Create Assignment:
 
@@ -284,12 +244,10 @@ For **code** cells you can choose between:
 - Autograded answer
 - Autograded tests
 - Read-only
-- none
 
 For **markdown** cells  the choices are:
 - Manually graded answer
 - Read-only
-- none
 
 **Read-only** cells  - students will not be able to edit these cells:
 ![](images/read_only.png)
@@ -313,7 +271,7 @@ http://nbgrader.readthedocs.io/en/stable/user_guide/source/ps1/problem1.html
 http://nbgrader.readthedocs.io/en/stable/user_guide/source/ps1/problem2.html
 
 
-#### Validate notebook (students):
+### Validate notebook (students):
 
 Before submitting completed assignment back  - you can click Validate button to check if all the autograded tests  pass and code is there for manually graded cells:
 ![](images/validate.png)
@@ -328,7 +286,7 @@ In case of success - success window:
 
 Note, by default it will allow to submit notebooks even if the don't pass validation.(can be customized)
 
-#### Modify released assignment(instructors and students):
+### Modify released assignment(instructors and students):
 
 If the assignment was already released but need to be modified - press cross button (Unrelease)
 
